@@ -56,7 +56,9 @@ jobs:
             }
             const text = res.content[0].text;
 
-            github.rest.issues.createComment({
-              ...context.issue,
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
               body: text
             });
