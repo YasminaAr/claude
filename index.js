@@ -1,5 +1,6 @@
 function add(a, b) {
     console.log("debug"); // ❌ mauvaise pratique
+    console.log("test"); // 👈 ajout
     return a + b;
 }
 
