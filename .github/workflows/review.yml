@@ -6,6 +6,8 @@ on:
 jobs:
   review:
     runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
 
     steps:
       # 1️⃣ Récupérer le code
