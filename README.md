@@ -188,41 +188,12 @@ Le code contient deux fonctions utilitaires simples.
 
 ---
 
-## Problèmes fréquents
-
-| Erreur | Solution |
-|--------|----------|
-| Rien ne se passe | Vérifier que `review.yml` est dans `.github/workflows/` |
-| Erreur API | Vérifier que `CLAUDE_API_KEY` est bien dans les Secrets |
-| Workflow failed | Aller dans **Actions → logs** pour voir le détail |
-
----
-
 ## Ce que ce projet démontre
 
 - CI/CD intelligent avec IA
 - Analyse automatique du code à chaque PR
 - Intégration de Claude dans un pipeline DevOps
 - Gain de temps en code review
-
----
-
-## Comparaison Avant / Après
-
-| Revue manuelle | Claude PR Review |
-|----------------|-----------------|
-| Lente, dépend du reviewer | Instantanée, cohérente |
-| Peut rater des bugs | Détection systématique |
-| Coûteuse en temps | Entièrement automatique |
-
----
-
-## Upgrades possibles
-
-- Bloquer le merge si Claude détecte des erreurs critiques
-- Ajouter un score qualité (0–100)
-- Analyser plusieurs fichiers à la fois
-- Corriger automatiquement le code
 
 ---
 
